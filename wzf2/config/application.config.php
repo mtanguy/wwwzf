@@ -3,6 +3,11 @@ return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
         'Application',
+        'Articles',
+        /*'Routestest',
+        'Clients',
+        'auth',
+        'Site',*/
     ),
 
     // These are various options for the listeners attached to the ModuleManager
@@ -17,7 +22,7 @@ return array(
         ),
 
         // An array of paths from which to glob configuration files after
-        // modules are loaded. These effectively override configuration
+        // modules are loaded. These effectively overide configuration
         // provided by modules themselves. Paths may use GLOB_BRACE notation.
         'config_glob_paths' => array(
             'config/autoload/{,*.}{global,local}.php',
