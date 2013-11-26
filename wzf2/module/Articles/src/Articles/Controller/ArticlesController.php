@@ -11,7 +11,15 @@ class ArticlesController extends AbstractActionController {
    // protected $articlesTable;
 
     public function indexAction() {
-       return new ViewModel(array('message'=>"Bonjour le monde")); 
+       
     }
-
+	public  function addAction(){
+		
+	}
+	public  function editAction(){
+	
+	}
+	public  function deleteAction(){
+	
+	}
 }
