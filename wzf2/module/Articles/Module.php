@@ -14,12 +14,7 @@
 namespace Articles;
 
 use Zend\ModuleManager\ModuleManager;
-use Articles\Model\Articles;
-use Articles\Model\ArticlesTable;
-use Zend\Db\ResultSet\ResultSet;
-use Zend\Db\TableGateway\TableGateway;
 
-use Articles\Model\CreaPdf;
 
 class Module {
 

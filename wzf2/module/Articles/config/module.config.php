@@ -7,21 +7,13 @@ return array(
            
         ),
     ),
-   /* 'service_manager' => array(
-        'factories' => array(
-            'Zend\Log' => function($sm) {
-                $log = new \Zend\Log\Logger();
-                $writer = new \Zend\Log\Writer\Stream("log_r2.txt");
-                $log->addWriter($writer);
-                return $log;
-            }
-        ),
-    ),*/
+ 
     'view_manager' => array(
         'template_path_stack' => array(
             'articles' => __DIR__ . '/../view',
         ),
     ),
+		
     'router' => array(
         'routes' => array(
             'articles' => array(
@@ -34,20 +26,11 @@ return array(
                     ),
                     'defaults' => array(
                         'controller' => 'Articles\Controller\Articles',
-                        'action' => 'tableau',
+                        'action' => 'index',
                     ),
                 ),
             ),
-            /*'pdf' => array(
-                'type' => 'literal',
-                'options' => array(
-                    'route' => '/pdf',
-                    'defaults' => array(
-                        'controller' => 'Articles\Controller\Pdf',
-                        'action' => 'fabrication',
-                    ),
-                ),
-            ),*/
+            
         ),
     ),
 );
